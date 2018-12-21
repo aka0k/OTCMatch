@@ -9,9 +9,10 @@ import pandas as pd
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 #memory_usage=otc.info(memory_usage='deep')
+#pip install python-Levenshtein to speed up comparisions
 
-uniocc = pd.read_csv('uni.csv', header=None)
-uniotc = pd.read_csv('uniotc.csv', header=None)
+uniocc = pd.read_csv('uni.csv', header=None) #OCC data
+uniotc = pd.read_csv('uniotc.csv', header=None) #OTC data
 df1=pd.DataFrame.from_dict(uniocc)
 
 df2=pd.DataFrame.from_dict(uniotc)
