@@ -18,7 +18,7 @@ df2=pd.DataFrame.from_dict(uniotc)
 
 df1.columns=['Name']
 df2.columns=['Name']
-
+# use fuzz.token_set_ratio or fuzz.token_sort_ratio depending on your needs. See fuzzywuzzy documentation.  
 def match(Col1,Col2):
     overall=[]
     score = []
